@@ -1,0 +1,381 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+body{
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: #f9f9fb;
+    z-index: 40;
+    position: fixed;
+    padding: 10px 0px;
+    box-shadow: 0px 2px 6px #69696969;
+}
+.logo{
+    width: 160px;
+    object-fit: contain;
+    margin-left: 100px;
+}
+header nav{
+    margin-left: 20%;
+}
+
+header nav li{
+    display: inline;
+    margin:0px 15px;
+}
+
+header nav li a{
+    text-decoration: none;
+    color:#000;
+}
+
+header .login-btn{
+    padding: 11px 35px;
+    text-decoration: none;
+    background-color: rgb(1, 150, 1);
+    color: #fff;
+    border-radius: 8px;
+    margin-left: 40px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+main{
+    width: 100%;
+}
+.fixed-header{
+    width: 100%;
+    background-color: #f9f9fb;
+    height: 80px;
+}
+.hero-container{
+    width: 100%;
+    height: 95vh;
+    background-image: url('../image/Back_gate_image.png');
+    background-size: cover;
+    background-position: 60%;
+    position: relative;
+    overflow: hidden;
+}
+
+.text-container{
+    width: 100%;
+    height: 100%;
+    background-color: #1b1b1b57;
+    padding: 100px;
+}
+.text-container h1{
+    font-size: 3.5em;
+    width: 70%;
+    color: rgb(255, 255, 255);
+}
+
+.text-container p{
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 1.5;
+    width: 70%;
+    color: rgb(255, 255, 255);
+}
+
+.text-container  button{
+    padding: 11px;
+    width: 130px;
+    border: none;
+    outline: none;
+    background-color: rgb(4, 189, 4);
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.rectors-intro-message{
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-area{
+    width: 50%;
+}
+.text-area h5{
+    font-size: 1rem;
+    color: #212528;
+    position: relative;
+    padding: 15px 0px;
+}
+
+.text-area h5::after{
+    content: '';
+    width: 70px;
+    height: 3px;
+    position: absolute;
+    background-color: rgb(4, 189, 4);
+    bottom: 0px;
+    left: 0px;
+
+}
+.text-area h2{
+    font-size: calc(1.425rem + 2.1vw);
+    color: #212528;
+}
+.text-area p{
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.rectors-img-container{
+    width: 38%;
+    height: 430px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.rectors-img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.rectors-img-container img:hover{
+    transform: scale(1.1);
+}
+
+.schools-gallery{
+    width: 100%;
+    height: 100vh;
+    background-color: #f9f9fb;
+    padding:50px 100px;
+}
+
+.gallery-content h5{
+    font-size: 1rem;
+    color: #212528;
+    position: relative;
+    text-transform: uppercase;
+    padding: 15px 0px;
+}
+
+.gallery-content h5::after{
+    content: '';
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    background-color: rgb(4, 189, 4);
+    bottom: 0px;
+    left: 0px;
+}
+
+.gallery-content h2{
+    font-size: calc(1.3rem + 2.0vw);
+    color: #212528;
+}
+
+.gallery-carousel{
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.gallery-carousel .box{
+    /* max-width:; */
+    /* max-height: 3px; */
+    width: 33%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0px 2px 6px #2125288c;
+    position: relative;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.box-info{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, transparent, #00000073);
+    padding: 20px;
+    display: flex;
+    align-items: end;
+}
+
+.box-info h3{
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+.about-our-school{
+    width: 100%;
+    height: 100vh;
+    padding: 40px 100px;
+}
+
+.about-our-school h3{
+    font-size: 1rem;
+    color: #212528;
+    position: relative;
+    text-transform: uppercase;
+    padding: 15px 0px;
+}
+.about-our-school h3::after{
+    content: '';
+    width: 50px;
+    height: 3px;
+    position: absolute;
+    background-color: rgb(4, 189, 4);
+    bottom: 0px;
+    left: 0px;
+}
+.about-content{
+    width: 100%;
+    height: 70vh;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    margin-top: 20px;
+    box-shadow: 0px 2px 6px #2125288c;
+}
+
+.field-image{
+    width: 45%;
+    height: 70vh;
+    background: url('../image/Field_image.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.field-image img{
+    width: 400px;
+}
+
+.about-text{
+    padding: 60px;
+    width: 60%;
+    height: 70vh;
+    line-height: 1.5;
+    font-weight: 100;
+    font-size: 1.2em;
+    text-align: justify;
+    border-left: 2px solid rgb(4, 189, 4);
+}
+
+.administrator{
+    width: 100%;
+    height: 110vh;
+    padding: 40px 100px;
+    background-color: #f9f9fb;
+    display: flex;
+    gap: 20px;
+}
+.admin-text{
+    width: 50%;
+}
+.admin-text h3{
+    font-size: 1rem;
+    color: #212528;
+    position: relative;
+    text-transform: uppercase;
+    padding: 15px 0px;
+}
+.admin-text h3::after{
+    content: '';
+    width: 50px;
+    height: 3px;
+    position: absolute;
+    background-color: rgb(4, 189, 4);
+    bottom: 0px;
+    left: 0px;
+}
+.admin-text h2{
+    font-size: calc(1.0rem + 2.0vw);
+    color: #212528;
+    margin: 15px 0px;
+}
+.admin-text p{
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: justify;
+
+}
+.admin-content{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    width: 50%;
+    gap: 15px;
+    margin-left: 30px;
+}
+.admin-box{
+    overflow: hidden;
+    box-shadow: 0px 2px 6px #2125288c;
+    margin-bottom: 10px;
+    position: relative;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.admin-content img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.admin-info{
+    padding: 8px;
+    position: absolute;
+    background-color: #ffffffb4;
+    bottom: 0px;
+    width: 65%;
+    border-radius: 0px 10px 0px 0px;
+}
+
+.admin-info h1{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.admin-info h4{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.our-core-courses{
+    width: 100%;
+    height: 75vh;
+    background-image: url('../image/Podium_image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+    background:#2125288c;
+
+}
