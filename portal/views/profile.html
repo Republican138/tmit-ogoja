@@ -1,0 +1,144 @@
+<?php
+require_once("../../includes/auth/authController.php");
+require_once("../../includes/control/profile_fetch.php");
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/template.css">
+    <link rel="stylesheet" href="../assets/Bi Icons/bootstrap-icons.css">
+</head>
+<body>
+    <div class="sideheader">
+        <div class="logo">
+            <img src="../assets/img/logo.png" alt="">
+        </div>
+        <div class="nav-btn">
+            <i class="bi bi-list"></i>
+        </div>
+        <ul>
+            <li><a href="dashboard.html"><i class="bi bi-speedometer2"></i>Dashboard</a></li>
+            <li><a href="" class="active"><i class="bi bi-person-circle"></i>Profile</a></li>
+            <li><a href="fees.html"><i class="bi bi-credit-card"></i>Fees and Payments</a></li>
+            <li><a href="courseregg.html"><i class="bi bi-journal-bookmark"></i>Course Registration</a></li>
+            <li><a href=""><i class="bi bi-grid"></i>Store</a></li>
+        </ul>
+        <div class="sign-out">
+            <a href="../../index.html"><i class="bi bi-box-arrow-left"></i> Sign Out</a>
+        </div>
+    </div>
+    <main>
+        <div class="profile-content">
+            <div class="profile-heading">
+                <h1>Course of Study</h1>
+            </div>
+            <div class="course-info-section">
+                <div class="course-information">
+                    <div class="course-profile">
+                        <h4>SCHOOL:</h4>
+                        <P>INFORMATION AND COMMUNICATION TECHNOLOGY</P>
+                    </div>
+                    <div class="course-profile">
+                        <h4>DEPARTMENT:</h4>
+                        <P>COMPUTER SCIENCE</P>
+                    </div>
+                    <div class="course-profile">
+                        <h4>REG NUMBER:</h4>
+                        <P>#000100100101</P>
+                    </div>
+                    <div class="course-profile">
+                        <h4>MODE OF ADMISSION:</h4>
+                        <P>MERIT</P>
+                    </div>
+                </div>
+                <img src="../assets/img/NoPic.jpg" alt="">
+            </div>
+            <div class="profile-heading">
+                <h1>Personal Information</h1>
+            </div>
+            <div class="personal-information-section">
+                <div class="personal-profile">
+                    <h4>SURNAME:</h4>
+                    <P><?php echo htmlspecialchars($surname); ?></P>
+                </div>
+                <div class="personal-profile">
+                    <h4>FIRST NAME:</h4>
+                    <P><?php echo htmlspecialchars($firstName); ?></P>
+                </div>
+                <div class="personal-profile">
+                    <h4>MIDDLE NAME:</h4>
+                    <P><?php echo htmlspecialchars($middleName); ?></P>
+                </div>
+                <div class="personal-profile">
+                    <h4>GENDER:</h4>
+                    <P><?php echo htmlspecialchars($gender); ?></P>
+                </div>
+                <div class="personal-profile">
+                    <h4>MARITAL STATUS:</h4>
+                    <P><?php echo htmlspecialchars($maritalStatus); ?></P>
+                </div>
+                <div class="personal-profile">
+                    <h4>PERMANENT HOME ADDRESS:</h4>
+                    <P><?php echo htmlspecialchars($homeAddress); ?></P>
+                </div>
+                <div class="personal-profile">
+                    <h4>CONTACT ADDRESS:</h4>
+                    <P><?php echo htmlspecialchars($contactAddress); ?></P>
+                </div>
+                <div class="personal-profile">
+                    <h4>PHONE NUMBER:</h4>
+                    <P><?php echo htmlspecialchars($phone); ?></P>
+                </div>
+                <div class="personal-profile">
+                    <h4>DATE OF BIRTH:</h4>
+                    <P><?php echo htmlspecialchars($dob); ?></P>
+                </div>
+                <div class="personal-profile">
+                    <h4>PLACE OF BIRTH:</h4>
+                    <P><?php echo htmlspecialchars($birthPlace); ?></P>
+                </div>
+                <div class="personal-profile">
+                    <h4>STATE OF ORIGIN:</h4>
+                    <P><?php echo htmlspecialchars($state); ?></P>
+                </div>
+                <div class="personal-profile">
+                    <h4>L.G.A:</h4>
+                    <P><?php echo htmlspecialchars($lga); ?> </P>
+                </div>
+                <div class="personal-profile">
+                    <h4>NATIONALITY:</h4>
+                    <P><?php echo htmlspecialchars($nation); ?></P>
+                </div>
+            </div>
+            <div class="profile-heading">
+                <h1>Next of Kin Details</h1>
+            </div>
+            <div class="next-of-kin-section">
+                <div class="kins-profile">
+                    <h4>FULL NAME:</h4>
+                    <P><?php echo htmlspecialchars($kinFullname); ?></P>
+                </div>
+                <div class="kins-profile">
+                    <h4>OCCUPATION:</h4>
+                    <P><?php echo htmlspecialchars($kinOccupation); ?></P>
+                </div>
+                <div class="kins-profile">
+                    <h4>PHONE NUMBER:</h4>
+                    <P><?php echo htmlspecialchars($kinPhone); ?></P>
+                </div>
+                <div class="kins-profile">
+                    <h4>EMAIL ADDRESS:</h4>
+                    <P><?php echo htmlspecialchars($kinEmail); ?></P>
+                </div>
+                <div class="kins-profile">
+                    <h4>RELATIONSHIP:</h4>
+                    <P><?php echo htmlspecialchars($kinRelationship); ?></P>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

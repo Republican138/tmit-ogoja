@@ -1,0 +1,79 @@
+<?php
+require_once ("../../includes/auth/authController.php");
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/template.css">
+    <link rel="stylesheet" href="../assets/Bi Icons/bootstrap-icons.css">
+</head>
+<body>
+    <div class="sideheader">
+        <div class="logo">
+            <img src="../assets/img/logo.png" alt="">
+        </div>
+        <div class="nav-btn">
+            <i class="bi bi-list"></i>
+        </div>
+        <ul>
+            <li><a href="./dashboard.html" ><i class="bi bi-speedometer2"></i>Dashboard</a></li>
+            <li><a href="profile.html"><i class="bi bi-person-circle"></i>Profile</a></li>
+            <li><a href="fees.html"><i class="bi bi-credit-card"></i>Fees and Payments</a></li>
+            <li><a href="£" class="active"><i class="bi bi-journal-bookmark"></i>Course Registration</a></li>
+            <li><a href=""><i class="bi bi-grid"></i>Store</a></li>
+        </ul>
+        <div class="sign-out">
+            <a href="../../index.html"><i class="bi bi-box-arrow-left"></i> Sign Out</a>
+        </div>
+    </div>
+    <main>
+        <div class="header">
+            <h1>Course Reg.</h1>
+            <div class="profilecontent">
+                <img src="../assets/img/NoPic.jpg" alt="">
+                <div class="profile-info">
+                    <h3 class="username">John Doe</h3>
+                    <p class="gmailtext">JohnDoe@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="mainsection course-reg-form">
+            <div class="CourseReginfo">
+                <p>Course Registration / Select Session</p>
+                <h2>Course Registration</h2>
+            </div>
+            <form class="form">
+                <div id="select">
+                    <p>Academic Session:</p>
+                        <input type="text" placeholder="Select Academic session" id="academicSession">
+                        
+                    </div>
+                    <div id="select">
+                        <p>Level:</p>
+                            <input type="text" placeholder="Select Level" id="level" a>
+                            
+                        </div>
+                <div id="select">
+                    <p>Semester:</p>
+                    <input type="text" placeholder="Please Input Semester">
+                </div>
+                <div id="select">
+                    <p>Department:</p>
+                    <input type="text" name="Department" placeholder="Please Input Department">
+                </div>
+                <div id="select">
+                    <p>Course:</p>
+                    <input type="text" name="Course" placeholder="Please Input Course">
+                </div>
+                <div class="submit">
+                    <button>Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

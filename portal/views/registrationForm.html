@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student registration</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet'type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../public_assets/Bi Icons/bootstrap-icons.min.css">
+    <style>
+        html,
+        body {
+            min-height: 100%;
+        }
+        body,
+        div,
+        form,
+        input,
+        select,
+        p {
+            padding: 0;
+            margin: 0;
+            outline: none;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 14px;
+            color: #666;
+        }
+
+        h1 {
+            margin: 0;
+            font-weight: 400;
+        }
+
+        h3 {
+            margin: 12px 0;
+            color: #1abe04;
+        }
+
+        .main-block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+        }
+
+        form {
+            width: 100%;
+            padding: 20px;
+        }
+
+        fieldset {
+            border: none;
+            border-top: 1px solid  #20e905;
+        }
+
+        .account-details,
+        .personal-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .account-details>div,
+        .personal-details>div>div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .account-details>div,
+        .personal-details>div,
+        input,
+        label {
+            width: 100%;
+        }
+
+        label {
+            padding: 0 5px;
+            text-align: right;
+            vertical-align: middle;
+        }
+
+        input {
+            padding: 5px;
+            vertical-align: middle;
+        }
+
+        .checkbox {
+            margin-bottom: 10px;
+        }
+
+        select,
+        .children,
+        /* .gender,
+        .MaritalStatus, */
+        .bdate-block {
+            width: calc(100% + 26px);
+            padding: 5px 0;
+        }
+
+        select {
+            background: transparent;
+        }
+
+        .gender input {
+            width: auto;
+        }
+        .MaritalStatus input {
+            width: auto;
+        }
+
+        .gender label {
+            padding: 0 5px 0 0;
+        }
+        .MaritalStatus label {
+            padding: 0 5px 0 0;
+        }
+
+        .bdate-block {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .birthdate select.day {
+            width: 35px;
+        }
+
+        .birthdate select.mounth {
+            width: calc(100% - 94px);
+        }
+
+        .birthdate input {
+            width: 38px;
+            vertical-align: unset;
+        }
+
+        .checkbox input,
+        .children input {
+            width: auto;
+            margin: -2px 10px 0 0;
+        }
+
+        .checkbox a {
+            color: #20e905;
+        }
+
+        .checkbox a:hover {
+            color: #20e905;
+        }
+        tbody h3{
+            font-size: 15px;
+            color: black;
+        }
+        tbody input{
+            height: 100%;
+            width: 100%;
+        }
+        button {
+            width: 100%;
+            padding: 10px 0;
+            margin: 10px auto;
+            border-radius: 5px;
+            border: none;
+            background:#18c201;;
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        button:hover {
+            background: #20e905;
+        }
+
+        @media (min-width: 568px) {
+
+            .account-details>div,
+            .personal-details>div {
+                width: 50%;
+            }
+
+            label {
+                width: 40%;
+            }
+
+            input {
+                width: 60%;
+            }
+
+            select,
+            .children,
+            .gender,
+            .MaritalStatus,
+            .bdate-block {
+                width: calc(60% + 16px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-block">
+        <form action="/">
+            <h1>Student Registration Form</h1>
+            <div>
+                <legend>
+                    <h3>Personal Details</h3>
+                </legend>
+                <div class="personal-details" >
+                    <div>
+                        <div><label>First Name*</label><input type="text" name="firstname" required></div>
+                        <div><label>Middle Name*</label><input type="text" name="middlename" required></div>
+                        <div><label>Last Name*</label><input type="text" name="lastname" required></div>
+                        <div><label>Phone*</label><input type="text" name="phone" required></div>
+                        <div><label>Email*</label><input type="email" name="email" required></div>
+                        <div>
+                            <label>Nationality*</label>
+                            <select required name="nationality">
+                                <option value=""></option>
+                                <option value="Nigerian">Nigerian</option>
+                                <option value="NonNigerian">Non-Nigerian</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Religion*</label>
+                            <select name="religion" required>
+                                <option value=""></option>
+                                <option value="Christian">Christian</option>
+                                <option value="Muslim">Muslim</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <div>
+                            <label>Gender*</label>
+                            <select name ="gender" required>
+                                <option value=""></option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+                        <div class="birthdate">
+                            <label>Date-of-Birth*</label>
+                            <div class="bdate-block">
+                                <select name="dob" class="day" required>
+                                    <option value=""></option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                                <select name="month" class="mounth" required>
+                                    <option value=""></option>
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
+                                </select>
+                                <input type="text" name="day" required>
+                            </div>
+                        </div>
+                        <div><label>State Of Origin*</label><input type="text" name="sot" required></div>
+                        <div><label>L.G.A*</label><input type="text" name="lga" required></div>
+                        <div><label>Permanent Address*</label><input type="text" name="pa" required></div>
+                        <div><label>Contact Address*</label><input type="text" name="contact_address" required></div>
+                        <div>
+                            <label>Marital Status*</label>
+                            <select name="marital_status" required>
+                                <option value=""></option>
+                                <option value="Single">Single</option>
+                                <option value="married">married</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <legend>
+                    <h3>Next Of Kin Details</h3>
+                </legend>
+                <div class="personal-details">
+                    <div>
+                        <div><label>Full Name*</label><input type="text" name="kin_fullname" required></div>
+                        <div><label>Phone*</label><input type="text" name="kin_phone" required></div>
+                        <div><label>Email</label><input type="email" name="kin_email"></div>
+                    </div>
+                    <div>
+                        <div><label>Contact Address*</label><input type="text" name="kin_contact" required></div>
+                        <div><label>Occupation</label><input type="text" name="kin_occupation"></div>
+                        <div>
+                            <label>Relationship*</label>
+                            <select name="kin_relationship" required>
+                                <option value=""></option>
+                                <option value="father">Father</option>
+                                <option value="mother">Mother</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <fieldset>
+                <legend>Institutions Attended</legend>
+                <div>
+                    <table class="table table-striped table-sm">
+                        <thead>
+                          <tr>
+                            <th>S/N</th>
+                            <th>Name of Institution</th>
+                            <th>From - To</th>
+                            <th>Qualification Obtained</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><h3>1</h3></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                          </tr>
+                          <tr>
+                            <td><h3>2</h3></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                          </tr>
+                          <tr>
+                            <td><h3>3</h3></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                          </tr>
+                          <tr>
+                           <td> <h3>4</h3></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Consent Declaration</h3>
+                </legend>
+                <div class="terms-mailing">
+                    <div class="checkbox">
+                        <span>I <input type="text" name="checkbox"> hereby declare that the information given above on this form is correct to the best of my knowledge, if at any time it is discovered to be falsified, i shall be required to withdraw from this institute and be prosecuted</span>
+                    </div>
+            </fieldset>
+
+         
+<button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Submit
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header" style="display: flex; align-items: center; justify-content: space-between;">
+          <h5 class="modal-title" id="staticBackdropLabel">Students Login Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="padding: 0px; background-color: rgb(2, 190, 2); width: 23px;"><i class="bi bi-x" style="font-size: 19px;"></i></button>
+        </div>
+        <div class="modal-body">
+            Students Registration complete
+        </div>
+        <div class="modal-footer">
+          <button type="submit4" class="btn btn-secondary" data-bs-dismiss="modal">Continue</button>
+        </div>
+      </div> 
+    </div>
+  </div>
+        </form>
+    </div>
+
+
+    <script src="../../public_assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="../../public_assets/js/bootstrap.min.js"></script>
+    <script src="../../public_assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

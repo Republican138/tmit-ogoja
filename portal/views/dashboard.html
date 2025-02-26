@@ -1,0 +1,117 @@
+<?php
+require_once ("../../includes/auth/authController.php");
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/template.css">
+    <link rel="stylesheet" href="../assets/Bi Icons/bootstrap-icons.css">
+</head>
+<body>
+    <div class="sideheader">
+        <div class="logo">
+            <img src="../assets/img/logo.png" alt="">
+        </div>
+        <div class="nav-btn">
+            <i class="bi bi-list"></i>
+        </div>
+        <ul>
+            <li><a href="" class="active"><i class="bi bi-speedometer2"></i>Dashboard</a></li>
+            <li><a href="profile.html"><i class="bi bi-person-circle"></i>Profile</a></li>
+            <li><a href="fees.html"><i class="bi bi-credit-card"></i>Fees and Payments</a></li>
+            <li><a href="courseregg.html"><i class="bi bi-journal-bookmark"></i>Course Registration</a></li>
+            <li><a href=""><i class="bi bi-grid"></i>Store</a></li>
+        </ul>
+        <div class="sign-out">
+            <a href="../../index.html"><i class="bi bi-box-arrow-left"></i> Sign Out</a>
+        </div>
+    </div>
+    <main>
+        <div class="header">
+            <h1>Dashboard</h1>
+            <div class="profilecontent">
+                <img src="../assets/img/NoPic.jpg" alt="">
+                <div class="profile-info">
+                    <h3 class="username">John Doe</h3>
+                    <p class="gmailtext">JohnDoe@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-content">
+            <div class="grid-one">
+                <div class="box">
+                    <i class="bi bi-calendar-check" style="color: yellowgreen;"></i>
+                    <div class="box-content">
+                        <h3>Courses Registered</h3>
+                        <p>You Have <span>0</span> Courses Registered</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="bi bi-paperclip" style="color: rgb(9, 82, 192);"></i>
+                   <div class="box-content">
+                    <h3>Materials</h3>
+                    <p>Students Textbooks and Manuals </p>
+                   </div>
+                </div>
+                <div class="box">
+                    <i class="bi bi-star" style="color: rgb(190, 33, 13);"></i>
+                    <div class="box-content">
+                        <h3>Grades & Results</h3>
+                        <p><a href="#">Check semester results</a> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-two">
+                <div class="box">
+                    <i class="bi bi-cash" style="color: rgb(133, 6, 145);"></i>
+                    <div class="box-content">
+                        <h3>Fees Paid</h3>
+                        <p>You have <span>0</span> fees paid </p>
+                        <p>you have <span>0</span> pending</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="bi bi-envelope" style="color: rgb(50, 205, 128);"></i>
+                    <div class="box-content">
+                        <h3>Inbox</h3>
+                        <p>you have <span>0</span> Announcement </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="bi bi-book" style="color: rgb(16, 138, 5);"></i>
+                   <div class="box-content">
+                    <h3>Extra Curricular Enrollment</h3>
+                    <p>Not Available</p>
+                   </div>
+                </div>
+            </div>
+            <div class="grid grid-three">
+                <div class="box">
+                    <i class="bi bi-box" style="color: rgb(151, 8, 8);"></i>
+                    <div class="box-content">
+                        <h3>Petitions</h3>
+                        <p>Not Available</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="bi bi-check" style="color: rgb(188, 201, 3);"></i>
+                    <div class="box-content">
+                        <h3>Appointments</h3>
+                        <p>Not Available</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="bi bi-newspaper" style="color: rgb(165, 8, 86);"></i>
+                    <div class="box-content">
+                        <h3>News</h3>
+                        <p>Not Available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
